@@ -1,6 +1,12 @@
 - [Home](/README.md)
+
 - Getting Started
-  - [Mod Usage](/mod-usage.md)
-  - [Build / Run](/build.md)
+  - [Install](/install.md)
+  - [Using the Mod](/mod-usage.md)
+  - [Examples](/examples.md)
+
 - Reference
   - [Language](/scriptica-language.md)
+
+- Development
+  - [Build / Run](/build.md)

@@ -1,18 +1,23 @@
 # Scriptica
 
-Scriptica is a client-side Minecraft Fabric mod that adds an in-game scripting environment for automating common tasks.
+Scriptica is a **client-side** Minecraft Fabric mod that adds an in-game scripting environment (“Scriptica”) for automating common tasks.
 
-## Start here
-- Mod usage: `mod-usage.md`
+## Quick start
+1. Install the mod: `install.md`
+2. Launch Minecraft and press **`** (backtick / grave accent) to open the Scriptica GUI.
+3. Write a script and press **Run**.
+
+Scripts are saved as `*.sca` in:
+- `.minecraft/config/scriptica/scripts/`
+
+## What you can do
+- Automate movement + actions by pressing keys programmatically
+- Read player state (position/rotation/health, etc.)
+- Interact with the world (raycast, find blocks/entities, mine/place helpers)
+- React to events (tick, chat, and custom events)
+
+## Next pages
+- Install: `install.md`
+- Using the mod: `mod-usage.md`
 - Language reference: `scriptica-language.md`
-- Build / run: `build.md`
-
-## What you get
-- An in-game editor to write and run `*.sca` scripts.
-- A custom scripting language (Scriptica) with events + automation helpers.
-
-## Enable GitHub Pages
-If you want this site hosted on GitHub Pages:
-1. Repo **Settings → Pages**
-2. “Deploy from a branch”
-3. Branch: `main` (or `master`), folder: `/docs`
+- Examples: `examples.md`

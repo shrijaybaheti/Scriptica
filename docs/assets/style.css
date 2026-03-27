@@ -2,21 +2,47 @@
   --theme-color: #38bdf8;
 }
 
-/* Subtle, "developer docs" look */
+/* Subtle, modern "developer docs" look */
+html,
+body {
+  font-feature-settings: "ss01" 1, "ss02" 1;
+}
+
 body {
   background: radial-gradient(1200px 600px at 20% 0%, rgba(56, 189, 248, 0.10), transparent 50%),
     radial-gradient(900px 500px at 80% 10%, rgba(168, 85, 247, 0.10), transparent 45%),
     #0b1020;
 }
 
+/* Sidebar */
 .sidebar {
   background: rgba(11, 16, 32, 0.6);
   backdrop-filter: blur(10px);
   border-right: 1px solid rgba(148, 163, 184, 0.12);
 }
 
+.sidebar .app-name-link {
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.sidebar ul li a {
+  opacity: 0.92;
+}
+
+.sidebar ul li.active > a {
+  opacity: 1;
+}
+
+/* Content */
 .markdown-section {
-  max-width: 920px;
+  max-width: 980px;
+}
+
+.markdown-section h1,
+.markdown-section h2,
+.markdown-section h3 {
+  letter-spacing: 0.2px;
 }
 
 .markdown-section a {
@@ -26,3 +52,63 @@ body {
 .markdown-section a:hover {
   text-decoration: underline;
 }
+
+.markdown-section code {
+  border-radius: 6px;
+}
+
+.markdown-section pre {
+  border-radius: 10px;
+  border: 1px solid rgba(148, 163, 184, 0.12);
+}
+
+/* Navbar */
+.app-nav {
+  background: rgba(11, 16, 32, 0.45);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.10);
+}
+
+/* Cover page */
+section.cover {
+  background: transparent !important;
+}
+
+section.cover .cover-main {
+  max-width: 980px;
+}
+
+section.cover h1 {
+  font-size: 56px;
+  margin: 0 0 12px;
+}
+
+section.cover blockquote {
+  border-left: 0;
+  opacity: 0.9;
+}
+
+section.cover ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+section.cover ul li {
+  margin: 8px 0;
+  opacity: 0.95;
+}
+
+section.cover p a {
+  display: inline-block;
+  margin: 10px 10px 0 0;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  background: rgba(15, 23, 42, 0.55);
+  text-decoration: none !important;
+}
+
+section.cover p a:hover {
+  border-color: rgba(56, 189, 248, 0.7);
+}
+
