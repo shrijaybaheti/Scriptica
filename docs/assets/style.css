@@ -8,11 +8,38 @@ body {
   font-feature-settings: "ss01" 1, "ss02" 1;
 }
 
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(rgba(148, 163, 184, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.06) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(circle at 30% 0%, black, transparent 55%);
+  opacity: 0.55;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    radial-gradient(circle at 15% 20%, rgba(56, 189, 248, 0.14), transparent 35%),
+    radial-gradient(circle at 80% 10%, rgba(168, 85, 247, 0.10), transparent 40%);
+  mix-blend-mode: screen;
+  opacity: 0.6;
+  animation: ambient 14s ease-in-out infinite alternate;
+}
+
 body {
   background: radial-gradient(1200px 600px at 20% 0%, rgba(56, 189, 248, 0.10), transparent 50%),
     radial-gradient(900px 500px at 80% 10%, rgba(168, 85, 247, 0.10), transparent 45%),
     #0b1020;
 }
+
 
 /* Sidebar */
 .sidebar {
@@ -167,8 +194,11 @@ section.cover p a:hover {
   font-size: 54px;
   line-height: 1.05;
   letter-spacing: 0.2px;
+  background: linear-gradient(90deg, #e2e8f0, rgba(56, 189, 248, 0.95), rgba(168, 85, 247, 0.95));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
-
 .hero-tagline {
   margin: 0 0 14px;
   font-size: 16px;
@@ -259,10 +289,16 @@ section.cover p a:hover {
   }
 
   .hero h1 {
-    font-size: 42px;
-  }
-
-  .card-grid {
+  margin: 14px 0 10px;
+  font-size: 54px;
+  line-height: 1.05;
+  letter-spacing: 0.2px;
+  background: linear-gradient(90deg, #e2e8f0, rgba(56, 189, 248, 0.95), rgba(168, 85, 247, 0.95));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.card-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -313,3 +349,24 @@ section.cover p a:hover {
     transition: none !important;
   }
 }
+
+/* Sidebar active item pill */
+.sidebar ul li.active > a {
+  background: rgba(56, 189, 248, 0.10);
+  border: 1px solid rgba(56, 189, 248, 0.22);
+  border-radius: 10px;
+  padding: 6px 10px;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.sidebar ul li.active > a:hover {
+  border-color: rgba(56, 189, 248, 0.42);
+}
+@keyframes ambient {
+  from { transform: translate3d(0, 0, 0) scale(1); }
+  to { transform: translate3d(0, -12px, 0) scale(1.02); }
+}
+
+
+
