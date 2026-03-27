@@ -7,7 +7,7 @@
 
     <meta name="description" content="Scriptica: a client-side Minecraft Fabric scripting mod." />
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/themes/dark.css" />
-    <link rel="stylesheet" href="assets/style.css?v=4" />
+    <link rel="stylesheet" href="assets/style.css?v=5" />
   </head>
   <body>
     <div id="app"></div>
@@ -29,13 +29,19 @@
           placeholder: "Search docs",
           noData: "No results",
           depth: 4
-        }
+        },
+
+        plugins: [
+          function (hook, vm) {
+            hook.doneEach(function () {
+              var file = (vm.route && vm.route.file) ? vm.route.file : "";
+              document.body.classList.toggle("route-home", file === "home.md" || file === "");
+            });
+          }
+        ]
       };
     </script>
     <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
   </body>
 </html>
-
-
-

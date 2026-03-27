@@ -1,67 +1,54 @@
-<div class="hero">
-  <div class="hero-left">
-    <div class="hero-badge">Minecraft Fabric • Client-side</div>
-    <h1>Scriptica</h1>
-    <p class="hero-tagline">
-      A lightweight in‑game scripting mod for Minecraft. Write <strong>.sca</strong> scripts to automate routine actions and interact with the world.
+<div class="landing">
+  <div class="landing-hero">
+    <div class="brand">
+      <svg class="brand-mark" width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M12 2l2.2 6.6L21 10l-6.8 1.4L12 18l-2.2-6.6L3 10l6.8-1.4L12 2z" stroke="currentColor" stroke-width="1.6" />
+      </svg>
+      <div class="brand-name">SCRIPTICA</div>
+    </div>
+
+    <h1 class="landing-title">SCRIPTICA</h1>
+    <p class="landing-subtitle">
+      In‑game scripting for Minecraft (Fabric). Automate routine actions, react to events, and interact with the world — all from an editor inside the game.
     </p>
 
-    <div class="hero-actions">
+    <div class="landing-actions">
       <a class="btn primary" href="https://github.com/shrijaybaheti/Scriptica/releases/latest" target="_blank" rel="noreferrer">Download</a>
       <a class="btn" href="#/install">Install</a>
-      <a class="btn ghost" href="#/README">Docs</a>
+      <a class="btn ghost" href="#/README">Documentation</a>
     </div>
 
-    <div class="hero-meta">
-      <span>Target: <code>1.21.11</code></span>
-      <span>Hotkey: <code>`</code></span>
-      <span>Scripts: <code>.sca</code></span>
+    <div class="start-strip">
+      <span class="dot"></span>
+      <span>Get started:</span>
+      <span class="sep">Download → Install → Launch → Press <code>`</code></span>
+      <span class="muted">(Minecraft <code>1.21.11</code>)</span>
     </div>
   </div>
 
-  <div class="hero-right">
-    <div class="card-grid">
-      <div class="card">
-        <div class="card-title">In‑game editor</div>
-        <div class="card-text">Write, save, run, and stop scripts without alt‑tabbing.</div>
-      </div>
-      <div class="card">
-        <div class="card-title">Automation helpers</div>
-        <div class="card-text">Keys, look/turn, attack/use, hotbar + inventory helpers.</div>
-      </div>
-      <div class="card">
-        <div class="card-title">World interaction</div>
-        <div class="card-text">Raycast, find blocks/entities, and simple mine/place helpers.</div>
-      </div>
-      <div class="card">
-        <div class="card-title">Event driven</div>
-        <div class="card-text">Tick, chat, and custom events for reactive scripts.</div>
-      </div>
+  <div class="landing-grid">
+    <div class="feature">
+      <div class="feature-title">In‑game editor</div>
+      <div class="feature-text">Write, save, run, and stop scripts without alt‑tabbing.</div>
+    </div>
+    <div class="feature">
+      <div class="feature-title">Automation helpers</div>
+      <div class="feature-text">Keys, look/turn, attack/use, hotbar + inventory helpers.</div>
+    </div>
+    <div class="feature">
+      <div class="feature-title">World interaction</div>
+      <div class="feature-text">Raycast, find blocks/entities, and simple mine/place helpers.</div>
+    </div>
+    <div class="feature">
+      <div class="feature-title">Events</div>
+      <div class="feature-text">Tick, chat, and custom events for reactive scripts.</div>
     </div>
   </div>
-</div>
 
-<div class="section">
-  <h2 class="section-title">Download</h2>
-  <div class="download-panel">
-    <div class="download-text">
-      <div class="download-title">Latest release</div>
-      <div class="download-sub">Fabric mod for Minecraft <code>1.21.11</code> (client-side).</div>
-    </div>
-    <div class="download-actions">
-      <a class="btn primary" href="https://github.com/shrijaybaheti/Scriptica/releases/latest" target="_blank" rel="noreferrer">Download .jar</a>
-      <a class="btn" href="#/install">Install steps</a>
-    </div>
-  </div>
-  <div class="note">You’ll also need <strong>Fabric Loader</strong> and <strong>Fabric API</strong> for 1.21.11.</div>
-</div>
-
-<div class="section">
-  <h2 class="section-title">Documentation</h2>
-  <div class="link-grid">
+  <div class="landing-docs">
     <a class="link-card" href="#/install">
       <div class="link-title">Install</div>
-      <div class="link-text">Get Scriptica running on Fabric.</div>
+      <div class="link-text">Requirements and setup for Fabric 1.21.11.</div>
     </a>
     <a class="link-card" href="#/mod-usage">
       <div class="link-title">Using the mod</div>
@@ -69,11 +56,16 @@
     </a>
     <a class="link-card" href="#/scriptica-language">
       <div class="link-title">Language reference</div>
-      <div class="link-text">Syntax, standard library, and automation helpers.</div>
+      <div class="link-text">Syntax, stdlib, and automation functions.</div>
     </a>
-    <a class="link-card" href="#/build">
-      <div class="link-title">Build / dev</div>
-      <div class="link-text">Run the dev client and build the mod jar.</div>
-    </a>
+  </div>
+
+  <div class="landing-footer">
+    <span>Client-side • Fabric • Open source</span>
+    <span class="footer-links">
+      <a href="https://github.com/shrijaybaheti/Scriptica" target="_blank" rel="noreferrer">GitHub</a>
+      <span class="sep">•</span>
+      <a href="https://github.com/shrijaybaheti/Scriptica/releases/latest" target="_blank" rel="noreferrer">Releases</a>
+    </span>
   </div>
 </div>
