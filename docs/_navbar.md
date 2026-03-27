@@ -1,6 +1,5 @@
-- [Home](/)
-- [Install](/install.md)
+- [SCRIPTICA](/)
 - [Docs](/README.md)
-- [Language](/scriptica-language.md)
+- [Install](/install.md)
 - [GitHub](https://github.com/shrijaybaheti/Scriptica)
 - [Download](https://github.com/shrijaybaheti/Scriptica/releases/latest)

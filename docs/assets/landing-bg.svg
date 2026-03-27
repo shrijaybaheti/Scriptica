@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#070914" />
+      <stop offset="55%" stop-color="#0a1024" />
+      <stop offset="100%" stop-color="#040611" />
+    </linearGradient>
+
+    <filter id="softBlur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="18" />
+    </filter>
+    <filter id="milkyBlur" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="26" />
+    </filter>
+
+    <linearGradient id="milky" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f8fafc" stop-opacity="0.00" />
+      <stop offset="18%" stop-color="#f8fafc" stop-opacity="0.14" />
+      <stop offset="45%" stop-color="#fde68a" stop-opacity="0.18" />
+      <stop offset="62%" stop-color="#a7f3d0" stop-opacity="0.14" />
+      <stop offset="82%" stop-color="#93c5fd" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#f8fafc" stop-opacity="0.00" />
+    </linearGradient>
+
+    <radialGradient id="glowBlue" cx="22%" cy="70%" r="55%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.16" />
+      <stop offset="55%" stop-color="#38bdf8" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="#070914" stop-opacity="0.00" />
+    </radialGradient>
+
+    <radialGradient id="glowViolet" cx="78%" cy="32%" r="60%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.12" />
+      <stop offset="55%" stop-color="#a855f7" stop-opacity="0.04" />
+      <stop offset="100%" stop-color="#070914" stop-opacity="0.00" />
+    </radialGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#sky)" />
+  <rect width="1600" height="900" fill="url(#glowViolet)" filter="url(#softBlur)" />
+  <rect width="1600" height="900" fill="url(#glowBlue)" filter="url(#softBlur)" />
+
+  <path d="M-120,120 C220,40 520,80 780,140 C1040,200 1280,220 1720,120" fill="none" stroke="url(#milky)" stroke-width="210" opacity="0.9" filter="url(#milkyBlur)" />
+  <path d="M-120,130 C220,55 520,95 780,150 C1040,205 1280,230 1720,130" fill="none" stroke="#ffffff" stroke-width="48" opacity="0.06" filter="url(#milkyBlur)" />
+
+  <g fill="#ffffff">
+    <circle cx="90" cy="86" r="1.2" opacity="0.75" />
+    <circle cx="180" cy="140" r="1.0" opacity="0.60" />
+    <circle cx="260" cy="74" r="1.4" opacity="0.80" />
+    <circle cx="340" cy="160" r="1.1" opacity="0.62" />
+    <circle cx="420" cy="110" r="1.6" opacity="0.86" />
+    <circle cx="540" cy="88" r="1.2" opacity="0.70" />
+    <circle cx="620" cy="170" r="1.0" opacity="0.58" />
+    <circle cx="720" cy="116" r="1.5" opacity="0.83" />
+    <circle cx="820" cy="70" r="1.1" opacity="0.62" />
+    <circle cx="940" cy="136" r="1.3" opacity="0.76" />
+    <circle cx="1050" cy="92" r="1.1" opacity="0.62" />
+    <circle cx="1120" cy="160" r="1.7" opacity="0.88" />
+    <circle cx="1210" cy="98" r="1.2" opacity="0.70" />
+    <circle cx="1320" cy="150" r="1.0" opacity="0.58" />
+    <circle cx="1410" cy="86" r="1.5" opacity="0.83" />
+    <circle cx="1520" cy="128" r="1.2" opacity="0.72" />
+
+    <circle cx="120" cy="280" r="1.1" opacity="0.62" />
+    <circle cx="260" cy="320" r="1.6" opacity="0.86" />
+    <circle cx="390" cy="260" r="1.2" opacity="0.70" />
+    <circle cx="520" cy="340" r="1.1" opacity="0.62" />
+    <circle cx="660" cy="280" r="1.7" opacity="0.90" />
+    <circle cx="780" cy="320" r="1.1" opacity="0.62" />
+    <circle cx="920" cy="270" r="1.4" opacity="0.80" />
+    <circle cx="1050" cy="330" r="1.1" opacity="0.62" />
+    <circle cx="1180" cy="290" r="1.6" opacity="0.86" />
+    <circle cx="1320" cy="340" r="1.1" opacity="0.62" />
+    <circle cx="1460" cy="280" r="1.5" opacity="0.84" />
+
+    <circle cx="80" cy="470" r="1.3" opacity="0.74" />
+    <circle cx="240" cy="520" r="1.0" opacity="0.56" />
+    <circle cx="420" cy="470" r="1.7" opacity="0.88" />
+    <circle cx="620" cy="530" r="1.1" opacity="0.62" />
+    <circle cx="820" cy="480" r="1.4" opacity="0.78" />
+    <circle cx="1000" cy="560" r="1.0" opacity="0.56" />
+    <circle cx="1220" cy="510" r="1.6" opacity="0.86" />
+    <circle cx="1420" cy="560" r="1.0" opacity="0.54" />
+  </g>
+
+  <g opacity="0.75">
+    <circle cx="1340" cy="220" r="62" fill="#e2e8f0" opacity="0.05" />
+    <circle cx="1395" cy="188" r="26" fill="#e2e8f0" opacity="0.04" />
+    <circle cx="1286" cy="196" r="20" fill="#e2e8f0" opacity="0.03" />
+  </g>
+
+  <rect x="0" y="520" width="1600" height="420" fill="#040611" opacity="0.35" />
+
+  <path d="M0,720 C140,680 240,680 360,720 C480,760 620,780 760,740 C920,692 1040,700 1180,740 C1320,780 1440,780 1600,740 L1600,900 L0,900 Z" fill="#031011" opacity="0.95" />
+  <path d="M0,760 C160,724 260,730 380,760 C520,796 650,820 800,780 C980,732 1100,736 1240,780 C1380,820 1500,820 1600,790 L1600,900 L0,900 Z" fill="#062017" opacity="0.92" />
+
+  <g opacity="0.9">
+    <circle cx="220" cy="820" r="6" fill="#22d3ee" opacity="0.18" />
+    <circle cx="220" cy="820" r="2.2" fill="#a5f3fc" opacity="0.55" />
+
+    <circle cx="520" cy="842" r="7" fill="#22c55e" opacity="0.14" />
+    <circle cx="520" cy="842" r="2.0" fill="#bbf7d0" opacity="0.50" />
+
+    <circle cx="980" cy="832" r="7" fill="#38bdf8" opacity="0.16" />
+    <circle cx="980" cy="832" r="2.2" fill="#bae6fd" opacity="0.52" />
+
+    <circle cx="1300" cy="852" r="7" fill="#a855f7" opacity="0.14" />
+    <circle cx="1300" cy="852" r="2.0" fill="#ddd6fe" opacity="0.50" />
+  </g>
+</svg>

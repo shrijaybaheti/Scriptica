@@ -7,7 +7,7 @@
       <div class="brand-name">SCRIPTICA</div>
     </div>
 
-    <h1 class="landing-title">SCRIPTICA</h1>
+    <h1 class="landing-title"><span class="hash">#</span> SCRIPTICA</h1>
     <p class="landing-subtitle">
       In‑game scripting for Minecraft (Fabric). Automate routine actions, react to events, and interact with the world — all from an editor inside the game.
     </p>
@@ -69,3 +69,4 @@
     </span>
   </div>
 </div>
+
