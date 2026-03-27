@@ -17,5 +17,9 @@ bin/
 Thumbs.db
 Desktop.ini
 
+# JVM crash logs / replays (can be huge)
+hs_err_pid*.log
+replay_pid*.log
+
 # Fabric run dirs
 run/
