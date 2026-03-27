@@ -1,0 +1,21 @@
+# Gradle
+.gradle/
+.gradle-bootstrap/
+.gradle-user-home/
+build/
+out/
+bin/
+
+# IDEs
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+
+# OS
+Thumbs.db
+Desktop.ini
+
+# Fabric run dirs
+run/

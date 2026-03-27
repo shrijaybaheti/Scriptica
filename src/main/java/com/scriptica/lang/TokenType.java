@@ -1,0 +1,42 @@
+package com.scriptica.lang;
+
+public enum TokenType {
+    // Single-character
+    LEFT_PAREN, RIGHT_PAREN,
+    LEFT_BRACE, RIGHT_BRACE,
+    LEFT_BRACKET, RIGHT_BRACKET,
+    COMMA, DOT, SEMICOLON, COLON, QUESTION,
+    PLUS, MINUS, STAR, SLASH, PERCENT,
+
+    // One/two-character
+    BANG, BANG_EQUAL,
+    EQUAL, EQUAL_EQUAL,
+    GREATER, GREATER_EQUAL,
+    LESS, LESS_EQUAL,
+    AND_AND, OR_OR,
+
+    PLUS_PLUS, MINUS_MINUS,
+
+    PLUS_EQUAL, MINUS_EQUAL, STAR_EQUAL, SLASH_EQUAL, PERCENT_EQUAL,
+
+    RANGE, // ..
+
+    // Literals
+    IDENTIFIER, STRING, NUMBER,
+
+    // Keywords
+    LET, CONST,
+    IF, ELSE,
+    WHILE, FOR, IN,
+    SWITCH, CASE, DEFAULT,
+    DEFER,
+    STRUCT, CLASS, ENUM,
+    FUNC, RETURN,
+    BREAK, CONTINUE,
+    TRY, CATCH,
+    IMPORT,
+    TRUE, FALSE, NULL,
+    WAIT,
+
+    EOF
+}

@@ -1,0 +1,6 @@
+- [Home](/README.md)
+- Getting Started
+  - [Mod Usage](/mod-usage.md)
+  - [Build / Run](/build.md)
+- Reference
+  - [Language](/scriptica-language.md)

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "scriptica",
+  "version": "${version}",
+  "name": "Scriptica",
+  "description": "In-game automation scripting via the Scriptica language.",
+  "authors": ["you"],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.scriptica.client.ScripticaClientMod"]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "minecraft": "1.21.11",
+    "fabric": "*"
+  }
+}
+
+
