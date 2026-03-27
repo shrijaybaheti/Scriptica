@@ -1,4 +1,4 @@
-- [Home](/README.md)
+- [Home](/home.md)
 
 - Getting Started
   - [Install](/install.md)
@@ -10,3 +10,4 @@
 
 - Development
   - [Build / Run](/build.md)
+
