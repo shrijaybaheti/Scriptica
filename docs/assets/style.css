@@ -769,3 +769,167 @@ body.route-home .app-nav ul li:first-child a {
 body.route-home .app-nav ul li:first-child a:hover {
   text-decoration: none;
 }
+
+/* === Minecraft-ish layer (homepage) === */
+body.route-home {
+  --mc-accent: #22c55e;
+  --mc-accent2: #4ade80;
+  --mc-dirt: #8b5a2b;
+}
+
+/* Pixel-ish framing + subtle block texture */
+body.route-home .landing {
+  border-radius: 18px;
+  border-color: rgba(34, 197, 94, 0.20);
+  box-shadow:
+    0 26px 90px rgba(0, 0, 0, 0.55),
+    0 0 0 2px rgba(2, 6, 23, 0.65),
+    0 0 0 4px rgba(34, 197, 94, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  background:
+    linear-gradient(180deg, rgba(2, 6, 23, 0.58), rgba(2, 6, 23, 0.34)),
+    repeating-linear-gradient(0deg, rgba(226, 232, 240, 0.04) 0 1px, transparent 1px 8px),
+    repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.08) 0 1px, transparent 1px 10px);
+}
+
+body.route-home .landing::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 18% 10%, rgba(34, 197, 94, 0.18), transparent 40%),
+    radial-gradient(circle at 80% 18%, rgba(56, 189, 248, 0.14), transparent 45%);
+  opacity: 0.55;
+}
+
+/* Grass + dirt header strip */
+body.route-home .landing-hero {
+  position: relative;
+}
+
+body.route-home .landing-hero::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 14px;
+  background:
+    linear-gradient(180deg, rgba(34, 197, 94, 0.95), rgba(34, 197, 94, 0.70)),
+    repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.12) 0 10px, transparent 10px 20px);
+  border-top: 1px solid rgba(2, 6, 23, 0.55);
+  box-shadow: inset 0 -1px 0 rgba(139, 90, 43, 0.45);
+  opacity: 0.9;
+}
+
+/* Make buttons feel like Minecraft UI */
+body.route-home .btn {
+  border-radius: 10px;
+  border-color: rgba(226, 232, 240, 0.18);
+  background: rgba(2, 6, 23, 0.42);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    inset 0 -2px 0 rgba(0, 0, 0, 0.35);
+}
+
+body.route-home .btn:hover {
+  border-color: rgba(34, 197, 94, 0.40);
+}
+
+body.route-home .btn.primary {
+  border-color: rgba(34, 197, 94, 0.50);
+  background: linear-gradient(180deg, rgba(34, 197, 94, 0.24), rgba(34, 197, 94, 0.10));
+}
+
+body.route-home .btn.primary:hover {
+  border-color: rgba(74, 222, 128, 0.65);
+}
+
+/* Feature cards: blocky + small accent bar */
+body.route-home .feature,
+body.route-home .link-card {
+  border-radius: 14px;
+  border-color: rgba(34, 197, 94, 0.12);
+  background: rgba(2, 6, 23, 0.34);
+}
+
+body.route-home .feature {
+  position: relative;
+  overflow: hidden;
+}
+
+body.route-home .feature::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 7px;
+  background:
+    linear-gradient(90deg, rgba(34, 197, 94, 0.85), rgba(74, 222, 128, 0.65)),
+    linear-gradient(180deg, rgba(139, 90, 43, 0.40), rgba(139, 90, 43, 0.10));
+  opacity: 0.95;
+}
+
+body.route-home .feature-title {
+  letter-spacing: 0.3px;
+}
+
+/* Navbar: a bit more “game HUD” */
+body.route-home .app-nav a:hover {
+  background: rgba(34, 197, 94, 0.10);
+}
+
+body.route-home .landing {
+  position: relative;
+}
+
+body.route-home .brand {
+  border-color: rgba(34, 197, 94, 0.22);
+  background: rgba(2, 6, 23, 0.40);
+}
+
+body.route-home .brand-mark {
+  filter: drop-shadow(0 0 10px rgba(34, 197, 94, 0.35));
+}
+
+body.route-home .landing-title {
+  background: linear-gradient(90deg, #e2e8f0, rgba(34, 197, 94, 0.95), rgba(56, 189, 248, 0.92));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+body.route-home .mc-badges {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 auto 14px;
+}
+
+body.route-home .mc-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(34, 197, 94, 0.18);
+  background: rgba(2, 6, 23, 0.45);
+  backdrop-filter: blur(10px);
+  color: rgba(226, 232, 240, 0.90);
+  font-size: 12px;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.05),
+    inset 0 -2px 0 rgba(0, 0, 0, 0.35);
+}
+
+body.route-home .start-strip {
+  border-color: rgba(34, 197, 94, 0.18);
+}
+
+body.route-home .start-strip .dot {
+  border-radius: 4px;
+  background: var(--mc-accent);
+  box-shadow: 0 0 18px rgba(34, 197, 94, 0.55);
+}

@@ -2,7 +2,7 @@
   <div class="landing-hero">
     <div class="brand">
       <svg class="brand-mark" width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-        <path d="M12 2l2.2 6.6L21 10l-6.8 1.4L12 18l-2.2-6.6L3 10l6.8-1.4L12 2z" stroke="currentColor" stroke-width="1.6" />
+        <path d="M12 2l7 7-7 13L5 9l7-7z" stroke="currentColor" stroke-width="1.6" />
       </svg>
       <div class="brand-name">SCRIPTICA</div>
     </div>
@@ -11,6 +11,12 @@
     <p class="landing-subtitle">
       In‑game scripting for Minecraft (Fabric). Automate routine actions, react to events, and interact with the world — all from an editor inside the game.
     </p>
+
+    <div class="mc-badges">
+      <span class="mc-badge">Fabric</span>
+      <span class="mc-badge">Client-side</span>
+      <span class="mc-badge">Automation</span>
+    </div>
 
     <div class="landing-actions">
       <a class="btn primary" href="https://github.com/shrijaybaheti/Scriptica/releases/latest" target="_blank" rel="noreferrer">Download</a>
@@ -69,4 +75,6 @@
     </span>
   </div>
 </div>
+
+
 
