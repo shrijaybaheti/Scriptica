@@ -23,3 +23,8 @@ replay_pid*.log
 
 # Fabric run dirs
 run/
+
+# JVM crash logs
+hs_err_pid*.log
+replay_pid*.log
+
