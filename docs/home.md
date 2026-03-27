@@ -41,12 +41,39 @@
   </div>
 </div>
 
-## Download
+<div class="section">
+  <h2 class="section-title">Download</h2>
+  <div class="download-panel">
+    <div class="download-text">
+      <div class="download-title">Latest release</div>
+      <div class="download-sub">Fabric mod for Minecraft <code>1.21.11</code> (client-side).</div>
+    </div>
+    <div class="download-actions">
+      <a class="btn primary" href="https://github.com/shrijaybaheti/Scriptica/releases/latest" target="_blank" rel="noreferrer">Download .jar</a>
+      <a class="btn" href="#/install">Install steps</a>
+    </div>
+  </div>
+  <div class="note">You’ll also need <strong>Fabric Loader</strong> and <strong>Fabric API</strong> for 1.21.11.</div>
+</div>
 
-Grab the latest `.jar` from GitHub Releases:
-- https://github.com/shrijaybaheti/Scriptica/releases/latest
-
-## Start here
-- Install: `install.md`
-- Using the mod: `mod-usage.md`
-- Language reference: `scriptica-language.md`
+<div class="section">
+  <h2 class="section-title">Documentation</h2>
+  <div class="link-grid">
+    <a class="link-card" href="#/install">
+      <div class="link-title">Install</div>
+      <div class="link-text">Get Scriptica running on Fabric.</div>
+    </a>
+    <a class="link-card" href="#/mod-usage">
+      <div class="link-title">Using the mod</div>
+      <div class="link-text">Open the GUI, save/load scripts, run/stop safely.</div>
+    </a>
+    <a class="link-card" href="#/scriptica-language">
+      <div class="link-title">Language reference</div>
+      <div class="link-text">Syntax, standard library, and automation helpers.</div>
+    </a>
+    <a class="link-card" href="#/build">
+      <div class="link-title">Build / dev</div>
+      <div class="link-text">Run the dev client and build the mod jar.</div>
+    </a>
+  </div>
+</div>
